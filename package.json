@@ -1,0 +1,27 @@
+{
+  "name": "ES6-Github-App",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vagner B.C",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "scripts": {
+    "dev-babel": "babel ./main.js -o ./bundle.js -w",
+    "build": "webpack --mode=development -w",
+    "dev": "webpack-dev-server --mode=development"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
